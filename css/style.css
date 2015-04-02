@@ -1,0 +1,1282 @@
+@charset "utf-8";
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+共通設定およびSmartPhone[480px以下]
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+/*==========================================
+ common 
+===========================================*/
+html,body {
+    height: 100%;
+    margin: 0;
+}
+body {
+	font-family:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width: 100%;
+	font-size: 16px;
+	color: #808068;
+}
+a {
+	text-decoration: none;
+}
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+li {
+	list-style-type: none;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+    list-style:none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+
+
+/*==========================================
+ ヘッダー
+===========================================*/
+header {
+	width: 93.75%;
+	height: 60px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#logo_icon_area {
+	padding-top: 18px;
+}
+
+/*==========================================
+ ロゴ
+===========================================*/
+#logo {
+	width: 122px;
+	height: 20px;
+	float: left;
+}
+
+
+/*==========================================
+ アイコンエリア
+===========================================*/
+#icon_area {
+	width: 112px;
+	height: 40px;
+	float: right;
+}
+ul#headerIcon li {
+	width: 30%;
+	max-width: 45px;
+	float: right;
+	margin-right: 2%;
+}
+ul#headerIconLong {
+	display: none;
+}
+
+
+/*==========================================
+ ぱんくず共通
+===========================================*/
+.breadcrumb {
+	margin-bottom: 10px;
+	position: relative;
+	top: -15px;
+}
+.breadcrumb-under {
+	top: -5px;
+}
+.breadcrumb ol li{
+	font-size: 0.625em;
+	display: inline;
+}
+.breadcrumb ol li a {
+	color: #736357;
+}
+.breadcrumb ol li a:hover {
+	text-decoration: underline;
+}
+
+
+/*==========================================
+ ナビゲーション
+===========================================*/
+nav {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 100;
+}
+
+.tabrow {
+    text-align: center;
+    list-style: none;
+    line-height: 1.3;
+	position: relative;
+	font-size: 0.5625em;
+}
+.tabrow li {
+	width: 17.5%;
+	height: 24px;
+	padding: 6px 0;
+    border: 1px solid #AAA;
+    background: #ECECEC;
+    display: inline-block;
+	vertical-align: middle;
+	position: relative;
+    z-index: 0;
+    border-radius: 4px 4px 0 0;
+    line-height: 1.4;
+}
+.tabrow li.line1 p {
+	line-height: 3;
+}
+.tabrow li.selected {
+    background: #FFF;
+    color: #000;
+    z-index: 2;
+    border-bottom-color: #FFF;
+    font-weight: bold;
+}
+.tabrow li a.selectedColor {
+	color: #E08080;
+}
+	
+.tabrow:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #AAA;
+    z-index: 1;
+}		
+.tabrow:before {
+    z-index: 1;
+}		
+.tabrow li a {
+	color: #808068;
+	display: block;
+}
+.tabrow li #styletext {
+	display: none;
+}
+
+
+
+
+.tabrow li ul.subselect {
+	display: none;
+}
+
+.tabrow li ul.subselect li {
+	width: 100%;/*サブメニューの幅*/
+	height: 30px;
+	background: #ECECEC;/*サブメニューの背景色*/
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #AAA;
+	line-height: 3.5;
+	padding: 0;
+}
+.tabrow li ul.subselect li a:hover {
+	background: #AAA;
+	color: #fff;
+}
+
+.tabrow li ul.heightAdjustment {
+	position: relative;
+	top: -10px;
+}
+
+
+
+
+/*==========================================
+ コンテンツエリア
+===========================================*/
+#contents {
+	width: 93.75%;
+	height: auto !important;
+	margin: 0 auto;
+}
+#contents #mainContents {
+	width: 100%;
+	height: auto !important;
+	margin-bottom: 10px;
+}
+#contents #subContents {
+	width: 100%;
+	height: auto !important;
+	position: relative;
+	z-index: 1;
+}
+
+
+/*==========================================
+ メインコンテンツ｜ページタイトル
+===========================================*/
+#contents #mainContents .title {
+	margin-bottom: 10px;
+	font-size: 0.6875em;
+	width: 100%;
+	height: 20px;
+	border-bottom: 1px solid #AB9E8F;
+}
+#contents #mainContents .title p.categoryname {
+	float: left;
+}
+#contents #mainContents .title p.number {
+	float: left;
+	padding-left: 1em;
+}
+#contents #mainContents .title p.order {
+	float: right;
+}
+#contents #mainContents .title p.number span {
+	font-size: 170%;
+	font-weight: bold;
+	line-height: 0.8;
+}
+
+#contents #mainContents .title p.categorytitle {
+	font-family: Century Gothic, "メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #E08080;
+	font-size: 2em;
+	position: relative;
+	top: 5px;
+	line-height: 0;
+	font-weight: bold;
+}
+#contents #mainContents .title p.categorytitlejp {
+	color: #997A45;
+	text-indent: 2em;
+}
+/*ランキング調整*/
+#contents #mainContents .title02 {
+	height: 45px;
+}
+#contents #mainContents .title p.categorytitle02 {
+	float: none;
+}
+#contents #mainContents .title p.categorytitlejp02 {
+	text-indent: 0;
+}
+
+
+
+
+/*==========================================
+ メインコンテンツ｜写真
+===========================================*/
+#contents #mainContents .contents-photo {
+	min-width: 300px;
+	max-width: 664px;
+	clear: both;
+	border-bottom: 1px solid #AB9E8F;
+	margin-bottom: 10px;
+}
+#contents #mainContents .contents-photo li {
+	display: inline-block;
+	vertical-align:top;
+	width: 30%;
+	margin-right: 3%;
+}
+#contents #mainContents .contents-photo li:nth-child(3n) {
+	margin-right: 0;
+}
+#contents #mainContents .contents-photo li a {
+	text-decoration: underline;
+	color: #464646;
+}
+#contents #mainContents .contents-photo li a:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+/*スタイルネーム*/
+#contents #mainContents .contents-photo li p.stylename {
+	font-size: 0.7em;
+	line-height: 1.5;
+	border-bottom: 1px dotted #787878;
+	padding-bottom: 3px;
+	margin-top: 3px;
+}
+#contents #mainContents .contents-photo li .new {
+	width: 30%;
+	max-width: 31px;
+	padding-left: 5px;
+}
+#contents #mainContents .contents-photo li img {
+	margin-bottom: 3px;
+}
+
+/*スタイリストネーム*/
+#contents #mainContents .contents-photo li .stylist {
+	width: 100%;
+	height: 30px;
+	position: relative;
+	top: -7px;
+}
+#contents #mainContents .contents-photo li p.stylistname {
+	color: #464646;
+	line-height: 1.5;
+	float: left;
+	font-size: 0.625em;
+}
+#contents #mainContents .contents-photo li .icon_clip {
+	width: 25%;
+	max-width: 30px;
+	float: right;
+}
+
+
+
+/*==========================================
+ メインコンテンツ｜キーワード
+===========================================*/
+#contents #mainContents .contents-keyword {
+	clear: both;
+	border-bottom: 1px solid #AB9E8F;
+	margin-bottom: 10px;
+}
+#contents #mainContents .contents-keyword ul.c-keyword li {
+	font-size: 1em;
+	line-height: 1.5;
+	float: left;
+	margin-bottom: 10px;
+	width: auto;
+	margin-right: 10px;
+}
+#contents #mainContents .contents-keyword ul.c-keyword li a {
+	color: #807F68;
+	display: block;
+	border-radius: 4px;
+	padding: 8px;
+	border: 1px solid #DEDEDE;
+}
+#contents #mainContents .contents-keyword ul.c-keyword li a:hover {
+	background:  #DEDEDE;
+}
+
+
+
+
+
+/*==========================================
+ メインコンテンツ｜ランキング
+===========================================*/
+#contents #mainContents .contents-other {
+	clear: both;
+	border-bottom: 1px solid #AB9E8F;
+	margin-bottom: 10px;
+}
+#contents #mainContents .contents-other ul.c-other li {
+	font-size: 0.875em;
+	line-height: 1.5;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#contents #mainContents .contents-other ul.c-other li img {
+	margin-bottom: 5px;
+}
+#contents #mainContents .contents-other ul.c-other li p {
+	display: block;
+}
+#contents #mainContents .contents-other ul.c-other li a {
+	color: #807F68;
+}
+#contents #mainContents .contents-other ul.c-other li a:hover {
+	opacity: 0.7;
+}
+
+
+
+
+
+
+/*==========================================
+ メインコンテンツ｜ページ送り
+===========================================*/
+#contents #mainContents .page ul li {
+	float: left;
+	width: 30px;
+	height: 22px;
+	text-align: center;
+	font-size: 0.75em;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+	line-height: 2;
+	margin-right: 3px;
+}
+#contents #mainContents .page ul li:first-child {
+	border: 1px solid #E08080;
+}
+#contents #mainContents .page ul li a {
+	color: #808068;
+	display: block;
+}
+#contents #mainContents .page ul li a.pinkBorder {
+	color: #E08080;
+}
+
+
+
+#contents #mainContents .page .pagenext {
+	width: 160px;
+	height: 30px;
+	float: right;
+	font-size: 0.625em;
+}
+#contents #mainContents .page .pagenext p {
+	float: right;
+}
+#contents #mainContents .page .pagenext p.next,
+#contents #mainContents .page .pagenext p.prev {
+	border: 1px solid #7E7E7E;
+	border-radius: 4px;
+	margin-left: 5px;
+	padding: 3px;
+}
+#contents #mainContents .page .pagenext p.next a,
+#contents #mainContents .page .pagenext p.prev a {
+	color: #464646;
+	display: block;
+}
+#contents #mainContents .page .pagenext p.current {
+	line-height: 2.5;
+}
+
+
+
+/*==========================================
+ メインコンテンツ｜スタイルディテール
+===========================================*/
+#contents #mainContents .contents-styledetail {
+	width: 100%;
+	clear: both;
+	border-bottom: 1px solid #AB9E8F;
+	margin-bottom: 10px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-box {
+	margin: 0 auto;
+}
+#contents #mainContents .contents-styledetail .styletitle {
+	font-size: 1.125em;
+	font-weight: bold;
+}
+
+/*写真切り替え*/
+#contents #mainContents .contents-styledetail .c-styledetail-left .photoarea {
+	width: 300px;
+	height: 570px;
+	margin: 0 auto;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-left .photoarea ul li {
+	float: left;
+	width: 30%;
+	text-align: center;
+	font-size: 0.6875em;
+	color: #E08080;
+	margin-right: 13px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-left .photoarea ul li:nth-child(3n){
+	margin-right: 0;
+}
+
+
+#contents #mainContents .contents-styledetail .c-styledetail-left #clipBtn {
+	width: 178px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-left .youtubearea {
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	position: relative;
+	top: 200px;
+}
+
+/*スタイリストコメント*/
+#contents #mainContents .contents-styledetail .c-styledetail-right .comment-stylist {
+	margin-bottom: 20px;
+	position: relative;
+	top: -190px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right .comment-stylist-bg {
+	font-size: 0.75em;
+	font-weight: bold;
+	background: #DADADA;
+	width: 100%;
+	height: 28px;
+	line-height: 2.5;
+	text-indent: 1em;
+	border-radius: 4px 4px 0 0;
+	margin-bottom: 5px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right .comment-article {
+	font-size: 0.75em;
+	border-bottom: 1px dotted #8E8080;
+	padding-bottom: 10px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right .comment-stylistname {
+	font-size: 0.75em;
+	float: left;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right #webReserveBtn {
+	width: 178px;
+	float: right;
+}
+
+/*スタイルデータ*/
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.styledata {
+	font-size: 0.75em;
+	margin-bottom: 20px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.styledata dt,
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.styledata dd {
+	border-bottom: 1px dotted #8E8080;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.styledata dt {
+	float: left;
+	color: #E08080;
+	width: 98px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.styledata dd {
+	margin-left: 8em;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.styledata .last {
+	border-bottom: none;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.styledata dd.framebox a {
+	border: 1px solid #C0B8AF;
+	padding: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #736357;
+	border-radius: 4px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.styledata dd.framebox a:hover {
+	background: #C0B8AF;
+}
+
+
+/*おすすめタイプ*/
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type {
+	font-size: 0.75em;
+	margin-bottom: 20px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dt,
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dt {
+	float: left;
+	color: #E08080;
+	width: 48px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd {
+	margin-left: 4em;
+	color: #A1A1A1;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd span {
+	background: #DADADA;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-right: 2px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd span.typeselected {
+	background: #EDBFBF;
+	color: #736357;
+}
+
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd.three span {
+	width: 32.3%;
+	height: 18px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd.six span {
+	width: 15.8%;
+	height: 50px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd.six span img {
+	width: 39px;
+}
+
+
+/*アレンジのポイント*/
+#contents #mainContents .contents-styledetail .c-styledetail-right .arrangepoint {
+	background: #E8E6DD;
+	padding: 10px;
+	padding-bottom: 3px;
+	font-size: 0.75em;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-right .arrangepoint p.arrangepoint-title {
+	color: #E08080;
+	margin-bottom: 5px;;
+	font-size: 1.2em;
+}
+
+
+/*その他のスタイル*/ 
+#contents #mainContents .contents-styledetail .c-styledetail-under {
+	clear: both;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .other-style p.other-style-title {
+	font-size: 0.75em;
+	text-align: center;
+	border: 1px solid #B4A89A;
+	border-radius: 4px;
+	line-height: 1.8;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .other-style ul.other-style-photo li {
+	float: left;
+	width: 30.6%;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .other-style ul.other-style-photo li:nth-child(3n) {
+	margin-right: 0;
+}
+
+/*スタイリスト情報*/
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea {
+	width: 94%;
+	height: 120px;
+	background: #E8E6DD;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	padding: 10px;
+	overflow: hidden;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea img {
+	width: 89px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-photo {
+	float: left;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text {
+	line-height: 0.2;
+	float: left;
+	width: 57%;
+	margin-left: 20px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .stylistarea-namebox {
+	float: left;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .stylistarea-namebox .stylistarea-text-category {
+	color: #B14667;
+	font-size: 0.625em;
+	line-height: 2;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .stylistarea-namebox .stylistarea-text-name {
+	font-size: 0.9375em;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .stylistarea-namebox .stylistarea-text-ruby {
+	font-size: 0.5625em;
+}
+
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .stylistarea-snsbox {
+	float: right;
+	width: 55px;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .stylistarea-snsbox img {
+	width: 24px;
+	float: left;
+	margin-left: 2px;
+	margin-bottom: 2px;
+}
+
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .btnarea {
+	clear: both;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .btnarea img {
+	width: 178px;
+	display: block;
+}
+#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .btnarea img:first-child {
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/*==========================================
+ サブコンテンツ｜メニュー
+===========================================*/
+#contents #subContents ul.subMenu {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+#contents #subContents ul.subMenu .category {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 4px;
+	background: #E8E6DD;
+	border-radius: 4px;
+	font-family: Century Gothic, "メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height: 2;
+	text-indent: 0.5em;
+	color: #E08080;
+}
+#contents #subContents ul.subMenu .category span {
+	background: url(../images/arrow_subContents.png) no-repeat left center;
+}
+#contents #subContents ul.subMenu .category span.open {
+	background: url(../images/arrow_subContentsOpen.png) no-repeat left center;
+}
+#contents #subContents ul.subMenu .category p.leftAlignment {
+	font-size: 0.625em;
+	color: #808068;
+	display: inline;
+	position: relative;
+	left: 40px;
+	top: -3px;
+}
+#contents #subContents ul.subMenu .category p.leftAlignment1 {
+	left: 25px;
+}
+#contents #subContents ul.subMenu .category p.leftAlignment2 {
+	left: 60px;
+}
+#contents #subContents ul.subMenu .category p.leftAlignment3 {
+	left: 30px;
+}
+
+
+#contents #subContents ul.subMenu ul.item {
+	width: 90%;
+	margin: 0 auto;
+	height: 110px;
+}
+#contents #subContents ul.subMenu ul.heightAlignment {
+	height: 130px;
+}
+#contents #subContents ul.subMenu ul.item li {
+	float: left;
+	width: 48%;
+	height: 26px;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 0.6875em;
+	line-height: 2.5;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+#contents #subContents ul.subMenu ul.item li:nth-child(even) {
+	margin-right: 0;
+}
+#contents #subContents ul.subMenu ul.item li a {
+	color: #808068;
+	display: block;
+}
+#contents #subContents ul.subMenu li.subMenuLi ul.keyword li {
+	background: none;
+	border: 1px solid #E0E0E0;
+	width: auto;
+	text-indent: 0;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-right: 5px;
+}
+	
+
+
+
+
+
+/*==========================================
+ サブコンテンツ｜バナー
+===========================================*/
+#contents #subContents .bannerArea img {
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+/*==========================================
+ フッター
+===========================================*/
+footer {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	font-size: 0.625em;
+	line-height: 4;
+	overflow: hidden;
+}
+footer .gototop {
+	width: 40px;
+	float: right;
+	position: relative;
+	top: -50px;
+}
+
+
+
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+BP481 tablet［481px-969px］
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+@media only screen and (min-width: 481px){
+	/*ナビ*/
+	.tabrow li {
+		width: 18%;
+	}
+	.tabrow li ul.subselect li {
+		line-height: 3;
+	}
+
+	/*ランキング調整*/
+	#contents #mainContents .title02 {
+		height: 20px;
+	}
+	#contents #mainContents .title p.categorytitle02 {
+		float: left;
+	}
+	#contents #mainContents .title p.categorytitlejp02 {
+		text-indent: 2em;
+	}
+
+	/*スタイルネーム*/
+	#contents #mainContents .contents-photo li p.stylename {
+		font-size: 0.8em;
+	}
+	/*スタイリストネーム*/
+	#contents #mainContents .contents-photo li p.stylistname {
+		font-size: 0.75em;
+	}
+	#contents #mainContents .contents-photo li p.stylistname span {
+		display: none;
+	}
+	#contents #subContents .bannerArea li {
+		width: 32.5%;
+		float: left;
+		margin-right: 5px;
+	}
+	#contents #subContents .bannerArea li:nth-child(3) {
+		margin-right: 0;
+	}
+
+	/*==========================================
+	 メインコンテンツ｜キーワード調整
+	===========================================*/
+	#contents #mainContents .contents-keyword {
+		margin-top: 20px;
+	}
+	#contents #mainContents .contents-keyword ul.c-keyword li {
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+
+	/*==========================================
+	 メインコンテンツ｜長さ／年代別／ランキング調整
+	===========================================*/
+	#contents #mainContents .contents-other ul.c-other li {
+		width: 32%;
+		font-size: 0.875em;
+		line-height: 1.5;
+		margin-bottom: 0;
+		text-align: center;
+		float: left;
+		margin-right: 10px;
+	}
+	#contents #mainContents .contents-other ul.c-other li:nth-child(3n){
+		margin-right: 0;
+	}
+	
+	/*youtube調整*/
+	#contents #mainContents .contents-styledetail .c-styledetail-left .youtubearea {
+		position: relative;
+		top: 0px;
+	}
+	
+	/*スタイリストコメント調整*/
+	#contents #mainContents .contents-styledetail .c-styledetail-right .comment-stylist {
+		position: relative;
+		top: 0px;
+	}
+
+
+	/*おすすめタイプ*/
+	#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd.three span {
+		width: 32.3%;
+		height: 18px;
+	}
+	#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd.six span {
+		width: 15.95%;
+		height: 50px;
+	}
+	
+	/*スタイリストエリア　SNSボタン*/
+	#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea {
+		width: 96.6%;
+	}
+	
+	#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text {
+		width: 74%;
+	}
+	#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .stylistarea-namebox {
+		float: none;
+	}
+	#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .stylistarea-snsbox {
+		width: 150px;
+		float: left;
+		margin-top: 35px;
+	}
+
+	#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .btnarea {
+		float: right;
+		position: relative;
+		top: -65px;
+		left: 10px;
+	}
+	#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .btnarea img:first-child {
+		margin-bottom: 5px;
+	}
+	
+	/*その他スタイル*/
+	#contents #mainContents .contents-styledetail .c-styledetail-under .other-style ul.other-style-photo li {
+		float: left;
+		width: 15.1%;
+		margin-right: 8px;
+	}
+	#contents #mainContents .contents-styledetail .c-styledetail-under .other-style ul.other-style-photo li:nth-child(3n) {
+		margin-right: 8px;
+	}
+	#contents #mainContents .contents-styledetail .c-styledetail-under .other-style ul.other-style-photo li:nth-child(6n) {
+		margin-right: 0;
+	}
+}
+
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+minorBP517 ナビ用
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+@media only screen and (min-width: 530px){
+	/*ナビ*/
+	.tabrow {
+		font-size: 0.625em;
+	}
+	.tabrow li {
+	    line-height: 3;
+	}
+	.tabrow li span.newline {
+		display: none;
+	}
+	
+	/*その他スタイル*/
+	#contents #mainContents .contents-styledetail .c-styledetail-under .other-style ul.other-style-photo li {
+		width: 15.2%;
+	}
+
+}
+
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+minorBP625 アイコン用
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+@media only screen and (min-width: 625px){
+	ul#headerIcon {
+		display: none;
+	}
+	ul#headerIconLong {
+		display: block;
+	}
+	#icon_area { /*エリア拡大*/
+		width: 450px;
+	}
+	ul#headerIconLong li {
+		width: 32%;
+		max-width: 132px;
+		float: right;
+		margin-right: 1%;
+		padding-top: 3px;
+	}
+
+	/*ナビ*/
+	.tabrow {
+		font-size: 0.6875em;
+	}
+	.tabrow li {
+		width: 18%;
+		line-height: 2.5;
+	}
+	.tabrow li.line1 p {
+		line-height: 2.5;
+	}
+
+	/*==========================================
+	 メインコンテンツ｜写真4分割調整
+	===========================================*/
+	#contents #mainContents .contents-photo {
+		max-width: 712px;
+	}
+	#contents #mainContents .contents-photo li {
+		width: 23%;
+		margin-right: 10px;
+	}
+	#contents #mainContents .contents-photo li:nth-child(3n) {
+		margin-right: 10px;
+	}
+	#contents #mainContents .contents-photo li:nth-child(4n) {
+		margin-right: 0;
+	}
+	#contents #mainContents .contents-photo li a {
+		text-decoration: underline;
+	}
+	#contents #mainContents .page .pagenext {
+		width: 200px;
+		font-size: 0.8em;
+	}
+
+}
+
+
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+BP768 [768px-］
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+@media only screen and (min-width: 768px){
+	
+	/*ナビ*/
+	.tabrow li #styletext {
+		display: inline;
+	}
+
+	/*その他スタイル*/
+	#contents #mainContents .contents-styledetail .c-styledetail-under .other-style ul.other-style-photo li {
+		width: 15.7%;
+	}
+
+	/*スタイリストエリア*/
+	#contents #mainContents .contents-styledetail .c-styledetail-left {
+		width: 270px;
+		float: left;
+	}
+	#contents #mainContents .contents-styledetail .c-styledetail-right {
+		width: 56%;
+		float: left;
+		margin-left: 45px;
+	}
+	
+	/*スタイリスト｜ボタン*/
+	#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .btnarea {
+		left: 70px;
+	}
+	
+}
+
+
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+BP970 PC［970px-］
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+@media only screen and (min-width: 970px){
+	header {
+		width: 914px;
+	}
+	/*ナビ*/
+	nav .tabrow li{
+		width: 178px;
+	}
+	
+	#contents {
+		width: 914px;
+	}
+	#contents #mainContents {
+		width: 664px;
+		float: left;
+	}
+	#contents #subContents {
+		width: 200px;
+		float: right;
+	}
+	/*==========================================
+	 メインコンテンツ｜写真4分割調整
+	===========================================*/
+	#contents #mainContents .contents-photo li {
+		width: 23%;
+		margin-right: 11px;
+	}
+	#contents #mainContents .contents-photo li:nth-child(3n) {
+		margin-right: 11px;
+	}
+	#contents #mainContents .contents-photo li:nth-child(4n) {
+		margin-right: 0;
+	}
+	/*==========================================
+	 サブコンテンツ｜バナー調整
+	===========================================*/
+	#contents #subContents .bannerArea li {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+	}
+
+	/*==========================================
+	 サブコンテンツ｜メニュー調整
+	===========================================*/
+	#contents #subContents ul.subMenu ul.item {
+		width: 90%;
+		margin: 0 auto;
+		height: 200px;
+		display: block !important;
+	}
+	#contents #subContents ul.subMenu ul.heightAlignment {
+		height: 230px;
+	}
+	#contents #subContents ul.subMenu .category span {
+		background: none;
+	}
+	#contents #subContents ul.subMenu .category span.open {
+		background: none;
+	}
+	#contents #subContents ul.subMenu .category {
+		font-size: 1.125em;
+		height: 46px;
+		border-radius: 4px 4px 0 0;
+		text-align: center;
+		text-indent: -1em;
+		line-height: 1.7;
+		border-bottom: 1px solid #AB9E8F;
+		margin-bottom: 20px;
+		pointer-events : none;
+	}
+	#contents #subContents ul.subMenu .category p.leftAlignment {
+		font-size: 0.625em;
+		color: #808068;
+		display: block;
+		left: 5px;
+	}
+	#contents #subContents ul.subMenu .category p.leftAlignment1 {
+		left: 8px;
+	}
+	#contents #subContents ul.subMenu .category p.leftAlignment2 {
+		left: 8px;
+	}
+	#contents #subContents ul.subMenu .category p.leftAlignment3 {
+		left: 8px;
+	}
+	#contents #subContents ul.subMenu ul.item li {
+		width: 180px;
+		text-align: left;
+		border: none;
+		font-size: 0.75em;
+		text-indent: 1.5em;
+		background: url(../images/arrow2.png) no-repeat;
+		background-size: 6px;
+		background-position: left center;
+		position: relative;
+		left: 5px;
+	}
+	#contents #subContents ul.subMenu ul.item li:nth-child(even) {
+		margin-right: 0;
+	}
+	#contents #subContents ul.subMenu li.subMenuLi {
+		border: 1px solid #AB9E8F;
+		border-radius: 4px;
+		margin-bottom: 10px;
+	}
+	#contents #subContents ul.subMenu ul.item li a:hover {
+		text-decoration: underline;
+	}
+	#contents #subContents ul.subMenu ul.keyword li {
+		position: relative;
+		top: -5px;
+	}
+	#contents #subContents ul.subMenu ul.keyword li a:hover {
+		text-decoration: none;
+	}
+	/*スタイリスト｜ボタン*/
+	#contents #mainContents .contents-styledetail .c-styledetail-under .stylistarea .stylistarea-text .btnarea {
+		left: 50px;
+	}
+	
+	
+	/*==========================================
+	 メインコンテンツ｜長さ／年代別／ランキング調整
+	===========================================*/
+	#contents #mainContents .contents-other ul.c-other li {
+		width: 32.3%;
+	}
+
+	/*おすすめタイプ*/
+	#contents #mainContents .contents-styledetail .c-styledetail-right dl.type dd.three span {
+		width: 32.65%;
+		height: 18px;
+	}
+
+	/*その他スタイル*/
+	#contents #mainContents .contents-styledetail .c-styledetail-under .other-style ul.other-style-photo li {
+		width: 15.6%;
+	}
+
+	/*スタイリストエリア*/
+	#contents #mainContents .contents-styledetail .c-styledetail-right {
+		width: 350px;
+		float: right;
+		margin-left: 0;
+	}
+
+
+	
+	
+}
+
+
+
+
+
+/*clearfix*/
+.cf {
+	zoom: 1;
+}
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+
+
+
+/*color*/
+.pink {
+	color: #E08080;
+}
+
